@@ -1,0 +1,62 @@
+@import "colors";
+
+// ! Do as directed its your first project!
+
+// nav{
+//     @apply  flex justify-between items-center sticky
+//             w-[100%] z-10 top-0 p-[1 rem] 
+//             bg-[$first] ;
+
+    // > h1{
+    //     @apply uppercase;
+    // }
+
+    // > main{
+    // @apply   w-[70%] flex justify-end
+
+    // > a{ 
+       
+    //     m-[ 1rem ]
+    //     text-[$dark]
+
+    //     hover:text-[$third]
+
+    // }
+         
+
+    // }
+
+// }
+
+nav{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;                               //so that the element(nav bar) remains fix even after passing a specified offset wrt viewport
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+
+
+    > h1{
+        text-transform: uppercase;
+    }
+
+    >main{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+
+        >a{
+            color: $dark;
+            margin: 1rem;
+
+            &:hover{
+                color: $third;
+            }
+
+        }
+    }
+}
